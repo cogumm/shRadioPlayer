@@ -20,7 +20,8 @@
 </p>
 
 <p align="center">
-  <a href="#information_source-nlw---o-que-é-a-next-level-week">O que é o projeto ?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-o-que-é-o-projeto-">O que é o projeto ?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">License</a>
 </p>
 
