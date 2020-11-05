@@ -51,7 +51,6 @@ $ bash shRadio.sh
 -   Envie suas mudanças: `git commit -m 'feat: My new feature'`;
 -   Faça um push da sua branch: `git push origin my-feature`.
 
-After merging your receipt request to done, you can delete a branch from yours.
 Depois que a sua solicitação de recebimento for feita o merging, você pode excluir a sua branch.
 
 ## :memo: License
