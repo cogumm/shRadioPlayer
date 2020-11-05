@@ -1,6 +1,6 @@
 #!/bin/bash
 . src/config/config.sh
-. src/dependences.sh
+. src/dependencies.sh
 
 #-----------------------------------------------------------#
 # Data: 04 de Novembro de 2020
