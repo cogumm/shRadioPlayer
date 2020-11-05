@@ -38,7 +38,7 @@ Só realizar os sequintes passos:
 $ git clone https://github.com/cogumm/shRadio.git
 
 # 2. Acessando o diretório do projeto.
-$ cd 'shRadio'
+$ cd 'shRadioPlayer'
 
 # Rodando o programa.
 $ bash shRadioPlayer.sh
