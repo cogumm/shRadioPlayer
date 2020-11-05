@@ -5,7 +5,7 @@
 # Nome: Gabriel F. Vilar (CoGUMm)
 # E-mail: gabriel[at]cogumm[dot]net
 # Telegram: http://t.me/CoGUMm
-# Script: dependences
+# Script: dependencies
 # Descrição: Arquivo das dependencias do projeto.
 #---------------------------------------------------------------------------#
 
