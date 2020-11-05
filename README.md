@@ -41,7 +41,7 @@ $ git clone https://github.com/cogumm/shRadio.git
 $ cd 'shRadio'
 
 # Rodando o programa.
-$ bash shRadio.sh
+$ bash shRadioPlayer.sh
 ```
 
 ## 🤔 Como contribuir
