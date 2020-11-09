@@ -1,13 +1,17 @@
-<h1>Ouça rádios on-line pelo seu terminal!</h1>
+<h1>Listen to radios online through your terminal!</h1>
 
 <h1 align="center">
-    <img alt="#Delicinha" title="Bash radio" src="./.github/shRadio.png" width="250px" />
+    <img alt="#Delicinha" title="SH Radio Player" src="./.github/shRadio.png" width="250px" />
 </h1>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/cogumm/shRadio?color=%2304D361">
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/cogumm/shRadio">
+
+  <a href="https://wakatime.com/badge/github/cogumm/shRadioPlayer">
+    <img src="https://wakatime.com/badge/github/cogumm/shRadioPlayer.svg">
+  </a>
 
   <a href="https://github.com/cogumm/shRadio/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/cogumm/shRadio">
@@ -35,7 +39,7 @@ Só realizar os sequintes passos:
 
 ```bash
 # 1. Clonando o repositório.
-$ git clone https://github.com/cogumm/shRadio.git
+$ git clone https://github.com/cogumm/shRadioPlayer.git
 
 # 2. Acessando o diretório do projeto.
 $ cd 'shRadioPlayer'
