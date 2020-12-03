@@ -1,4 +1,4 @@
-<h1>Listen to radios online through your terminal!</h1>
+<h1>Listen web radios directly from your terminal!</h1>
 
 <h1 align="center">
     <img alt="#Delicinha" title="SH Radio Player" src="./.github/shRadio.png" width="250px" />
