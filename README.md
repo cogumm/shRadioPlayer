@@ -48,6 +48,25 @@ $ cd 'shRadioPlayer'
 $ bash shRadioPlayer.sh
 ```
 
+### Project structure
+
+This project has the following structure:
+
+```
+.
+├── LICENSE.md
+├── README.md
+├── shRadioPlayer.sh
+└── src
+    ├── config
+    │   ├── config.sh
+    │   └── yad.sh
+    ├── dependencies.sh
+    ├── main.sh
+    ├── PlayRadio.sh
+    └── testConnection.sh
+```
+
 ## 🤔 How to contribute
 
 -   Fork this project;
