@@ -4,26 +4,26 @@
 
 #-----------------------------------------------------------#
 # Data: 04 de Novembro de 2020
-# Nome: Gabriel F. Vilar (CoGUMm)
-# E-mail: gabriel[at]cogumm[dot]net
+# Name: Gabriel F. Vilar (CoGUMm)
+# Email: gabriel[at]cogumm[dot]net
 # Telegram: http://t.me/CoGUMm
 # Script: shRadio
-# Descrição: Script para escutar radio online via bash.
-# Variáveis: 
+# Description: Script para escutar radio online via bash.
+# Variables:
 #-----------------------------------------------------------#
 
-# Suprimir erros
+# Hide errors.
 exec 2>/dev/null
 
-# Cria uma trap, se o script for interrompido pelo usuário
+# Creates a system trap if user terminates the script.
 trap '_exit' TERM INT
 
-# Encerra script
+# Closed script
 function _exit()
 {
-	# Apaga arquivo temporário
+	# Remove temporary file
 	rm -f $TMP_LISTEN
-	# Mata os subshell's e shell principal
+	# Kill the main and child process of script
 	kill -9 $(pidof mplayer yad) \
 			$(ps aux | grep -v grep | grep "$SCRIPT" | grep -v "$$" | awk '{print $2}') &>/dev/null
 
