@@ -24,42 +24,42 @@
 </p>
 
 <p align="center">
-  <a href="#information_source-o-que-é-o-projeto-">O que é o projeto ?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-what-is-the-project-">What is the project ?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-how-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">License</a>
 </p>
 
-## :information_source: O que é o projeto ?
+## :information_source: What is the project ?
 
-O projeto nasceu de uma simples vontade de brincar com bash/shell script para ouvir rário on-line.
+The project was born out of a simple desire to play with bash/shell script to listen to rádio online.
 
-### Utilização
+### Use
 
-Só realizar os sequintes passos:
+Only perform the following steps:
 
 ```bash
-# 1. Clonando o repositório.
+# 1. Clone this repository
 $ git clone https://github.com/cogumm/shRadioPlayer.git
 
-# 2. Acessando o diretório do projeto.
+# 2. Accessing the directory.
 $ cd 'shRadioPlayer'
 
-# Rodando o programa.
+# Running the program.
 $ bash shRadioPlayer.sh
 ```
 
-## 🤔 Como contribuir
+## 🤔 How to contribute
 
--   Realize um fork;
--   Crie uma branch: `git checkout -b my-feature`;
--   Envie suas mudanças: `git commit -m 'feat: My new feature'`;
--   Faça um push da sua branch: `git push origin my-feature`.
+-   Fork this project;
+-   Create a branch: `git checkout -b my-feature`;
+-   Submit your changes: `git commit -m 'feat: My new feature'`;
+-   Push your branch: `git push origin my-feature`.
 
-Depois que a sua solicitação de recebimento for feita o merging, você pode excluir a sua branch.
+After merging your receipt request to done, you can delete a branch from yours. Depois que a sua solicitação de recebimento for feita o merging, você pode excluir a sua branch.
 
 ## :memo: License
 
-Este projeto está sob licença MIT, para mais detalhes verifique em [LICENSE][license]!
+This project is under MIT license, for more details check [LICENSE][license]!
 
 Made with ♥ by Gabriel F. Vilar :wave: [Telegram][telegram]
 
