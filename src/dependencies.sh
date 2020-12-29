@@ -1,37 +1,37 @@
 #!/bin/bash
 
-#---------------------------------------------------------------------------#
-# Data: 04 de Novembro de 2020
-# Nome: Gabriel F. Vilar (CoGUMm)
-# E-mail: gabriel[at]cogumm[dot]net
+#-----------------------------------------------------------#
+# Date: November 04, 2020
+# Name: Gabriel F. Vilar (CoGUMm)
+# Email: gabriel[at]cogumm[dot]net
 # Telegram: http://t.me/CoGUMm
 # Script: dependencies
-# Descrição: Arquivo das dependencias do projeto.
-#---------------------------------------------------------------------------#
+# Description: Project dependencies file.
+#-----------------------------------------------------------#
 
-dependences() {
+dependencies() {
     bash src/testConnection.sh
 
-    dependences=$(dpkg --get-selections | grep -c mplayer | grep -c yad | grep -c curl)
-    if [ which -a dependences ]
+    dependencies=$(dpkg --get-selections | grep -c mplayer | grep -c yad | grep -c curl)
+    if [ which -a dependencies ]
     then
         yad --image=gtk-dialog-question \
-            --title "Instalador de dependências." \
-            --text "Programas de dependências do projeto já instalados." $configYadB
+            --title "Dependency installer." \
+            --text "Project dependency programs already installed." $configYadB
     else
         yad --image=gtk-dialog-question \
-            --title "Instalador de dependências." \
-            --text "Instalando as dependências do projeto!" $configYadB
+            --title "Dependency installer." \
+            --text "Installing the project dependencies!" $configYadB
         sudo apt install mplayer -y
         sudo apt install yad -y
         sudo apt install curl -y
     fi
 
     yad --image=gtk-dialog-question \
-        --title "Instalador de dependências." \
-        --text "Os programas de dependências do projeto já estão instalados." $configYadB
+        --title "Dependency installer." \
+        --text "The project's dependency programs are already installed." $configYadB
     return
 }
 
-dependences
-# Fim
+dependencies
+# End

@@ -3,13 +3,12 @@
 . src/dependencies.sh
 
 #-----------------------------------------------------------#
-# Data: 04 de Novembro de 2020
+# Date: November 04, 2020
 # Name: Gabriel F. Vilar (CoGUMm)
 # Email: gabriel[at]cogumm[dot]net
 # Telegram: http://t.me/CoGUMm
 # Script: shRadio
-# Description: Script para escutar radio online via bash.
-# Variables:
+# Description: Script to listen to radio online via terminal.
 #-----------------------------------------------------------#
 
 # Hide errors.

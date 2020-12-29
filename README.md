@@ -33,7 +33,7 @@
 
 The project was born out of a simple desire to play with bash/shell script to listen to rádio online.
 
-### Use
+### :coffee: Who to use
 
 Only perform the following steps:
 
@@ -54,7 +54,7 @@ This project has the following structure:
 
 ```
 .
-├── LICENSE.md
+├── LICENSE
 ├── README.md
 ├── shRadioPlayer.sh
 └── src
@@ -74,7 +74,7 @@ This project has the following structure:
 -   Submit your changes: `git commit -m 'feat: My new feature'`;
 -   Push your branch: `git push origin my-feature`.
 
-After merging your receipt request to done, you can delete a branch from yours. Depois que a sua solicitação de recebimento for feita o merging, você pode excluir a sua branch.
+After merging your receipt request to done, you can delete a branch from yours. After your request to receive the merger, you can delete your branch.
 
 ## :memo: License
 

@@ -1,59 +1,61 @@
 #!/bin/bash
 
-#---------------------------------------------------------------------------#
-# Data: 05 de Novembro de 2020
-# Nome: Gabriel F. Vilar (CoGUMm)
-# E-mail: gabriel[at]cogumm[dot]net
+#-----------------------------------------------------------#
+# Date: November 05, 2020
+# Name: Gabriel F. Vilar (CoGUMm)
+# Email: gabriel[at]cogumm[dot]net
 # Telegram: http://t.me/CoGUMm
 # Script: yad
-# Descrição: Arquivo de configurações do yad.
-#---------------------------------------------------------------------------#
+# Description: Yad settings file.
+#-----------------------------------------------------------#
 
-# Icone utilizado no projeto.
+# Icon used in the project.
 ICON_APP=/usr/share/icons/HighContrast/48x48/emblems/emblem-music.png
 
-# Janela sem botões
+# Window without buttons.
 configYad="--width=500
 		   --text-align=fill
 		   --center
 		   --no-buttons
 		   --timeout 3"
 
-# Janela com botões de CANCELAR e OK.
+# Window with CANCEL and OK buttons.
 configYadB="--width=500
 		   --text-align=center
 		   --center
 		   --timeout 3"
 
-# Janela principal;
+# Main window.
+### BUG 😞 ###
 # janelaPrincipal()
 # {
-#     yad --form \
-# 		--center \
-# 		--width=300 \
-# 		--height=300 \
-# 		--fixed \
-# 		--title "$SCRIPT - by CoGUMm" \
-# 		--image $ICON_APP \
-# 		--text "Seja bem vindo ao <span foreground='red'><b>shRadio</b></span>!
-# 			\nSeu script de Rádio online.
-# 			\nVocẽ irá encontrar os mais diversos gêneros musicais. \nA lista de rádios são obtidas a partir da fonte \n<b>$SITE</b>.
-# 			\n\nPara começar, escolha o seu gẽnero músical, clicando\nno botão '<b>Gêneros</b>'.
-# 			\nObs: Todas as informações contidas na lista, são\nsincronizadas com a fonte." \
-# 		--field '':LBL '' \
-# 		--field "Defina o número de paginas a serem pesquisadas, \naumentando assim a quantidade de rádios encontradas.
-# 			\n\nObs: Dependendo do valor, a busca poderá demorar um pouco.":LBL '' \
-# 		--field 'Num. paginas para pesquisa:':NUM '1!1..20!1' \
-# 		--button 'Gêneros!gtk-cdrom':0 \
-# 		--button 'Limpar cache!gtk-delete':1 \
-# 		--button 'Sair!gtk-quit':252
+#        janelaPrincipal=$(yad --form \
+#            --center \
+#            --width 300 \
+#            --height 300 \
+#            --fixed \
+#            --title "$SCRIPT - by CoGUMm" \
+#            --image $ICON_APP \
+#            --text "Welcome to the <span foreground='red'><b>shRadio</b></span>!
+#                \nYour Online Radio script.
+#                \nYou will find the most diverse musical genres. \nThe radio list is obtained from the source: \n<b>$SITE</b>.
+#                \n\nTo start, choose your music genre by clicking \non the button <b>Genre</b>.
+#                \nNote: All information contained in the list is \nsyncronized with the source." \
+#            --field '':LBL '' \
+#            --field "Define the number of pages to be searched, \nthus incrasing the number of radios found.
+#                \n\nNote: Depending on the value, the search may \ntake a while.\n\n":LBL '' \
+#            --field 'Pages to a search:':NUM '1!1..20!1' \
+#            --button 'Genres!gtk-cdrom':0 \
+#            --button 'Clear cache!gtk-delete':1 \
+#            --button 'Exit!gtk-quit':252)
 # }
+### BUG 😞 ###
 
 # Janela de sincronização das estações.
 sincronizando()
 {
     yad --title Gêneros \
-        --text "Sincronizando gêneros musicais..." \
+        --text "Synchronizing music genres..." \
         --center \
         --no-buttons \
         --auto-kill \
@@ -65,40 +67,40 @@ sincronizando()
         --pulsate
 }
 
-# Janela de limpar o cache da aplicação.
+# Window to clear the application cache.
 limparCache()
 {
     yad --form \
         --image=gtk-dialog-question \
         --center \
         --fixed \
-        --title "Limpeza de cache" \
-        --text "Essa ação irá limpar todo cache de listas de rádios \ngeradas anteriormente.
-                \n\nDeseja continuar ?" \
-        --button "Sim":0 --button "Não":252
+        --title "Clear cache" \
+        --text "This action will clear the entire cache of \nradio lists generated previously.
+                \n\nDo you wish to continue ?" \
+        --button "Yes":0 --button "No":252
 }
 
-# Janela de gêneros.
+# Genres window.
 generos()
 {
-    yad --title "Gêneros" \
+    yad --title "Genres" \
         --center \
         --no-buttons \
         --width=300 \
         --height=600 \
         --no-buttons \
-        --text "<b>Total de gêneros encontrados: $(cat "$GENRE_LIST" | wc -l)</b>" \
+        --text "<b>Total genres found: $(cat "$GENRE_LIST" | wc -l)</b>" \
         --list \
         --search-column 1 \
         --listen \
-        --column "Nome"
+        --column "Name"
 }
 
 # Janela de busca de gêneros.
 buscaGeneros()
 {
-    yad --title "Rádios" \
-        --text "Gênero: <b>$GENRE</b>\nPágina: <b>$pag</b>\nProcurando..." \
+    yad --title "Radio" \
+        --text "Genre: <b>$GENRE</b>\Page: <b>$pag</b>\nSearching..." \
         --center \
         --on-top \
         --no-buttons \
@@ -111,7 +113,8 @@ buscaGeneros()
         --pulsate
 }
 
-# Janela do play em segundo plano.
+# Play window in the background.
+### BUG 😞 ###
 # play()
 # {
 #     yad --center \
@@ -131,3 +134,4 @@ buscaGeneros()
 #         --column "Listen" \
 #         --separator='|'
 # }
+### BUG 😞 ###

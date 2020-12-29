@@ -1,7 +1,8 @@
 #!/bin/bash
 clear
+
 #---------------------------------------------------------------------------#
-# Data: 06 de Setembro de 2017
+# Date: September 06, 2017
 # Last update: 15 de Novembro de 2020
 # Name: Gabriel F. Vilar (CoGUMm)
 # Email: gabriel[at]cogumm[dot]net
@@ -23,14 +24,14 @@ GENRE_LIST=/tmp/genres.list
 
 # Header of all scripts.
 head(){
-   echo "------------------------------------------------------------------"
+   echo "---------------------------------------------------------------------"
    echo "Creator and developer: Gabriel F. Vilar (CoGUMm)"
    echo "Email: gabriel[at]cogumm[dot]net"
    echo "Telegram: http://t.me/CoGUMm"
    echo "Website: http://cogumm.net"
    echo "I AM NOT RESPONSIBLE FOR BAD DAMAGE TO YOUR MACHINE WITH THIS SCRIPT,"
    echo "PLEASE USE IT IF YOU ARE JUST SURE WHAT YOU ARE DOING."
-   echo "------------------------------------------------------------------"
+   echo "---------------------------------------------------------------------"
 }
 
 head
